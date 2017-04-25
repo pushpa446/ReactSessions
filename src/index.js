@@ -1,5 +1,6 @@
-var hello = () => {
-    alert('hello !!');
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-hello();
+ReactDOM.render(
+    React.createElement('h1',null,'hello world'),
+        document.getElementById('main'));
