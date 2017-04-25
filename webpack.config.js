@@ -5,14 +5,17 @@ module.exports = {
         filename: 'bundle.js'
     },
 
-    devServer: {
-        inline: true,
-        port: 8446
-    },
-
     module: {
         rules: [
-            {test: /\.js$/, use: {loader: 'babel-loader', options: {presets: ['env','react']}}}
+            {test: /\.js$/,
+             exclude: /node_modules/,
+             use: {loader: 'babel-loader', options: {presets: ['env','react']}}}
         ]
+    },
+
+    externals: {
+        'react/addons': true,
+        'react/lib/ExecutionEnvironment': true,
+        'react/lib/ReactContext': true
     }
 };

@@ -1,7 +1,11 @@
-var chai = require('chai');
+import {expect} from 'chai';
+import {shallow} from 'enzyme';
+import {App} from '../src/app';
+import React from 'react';
 
 describe('App', function () {
-    it('should print 1 equals to 1', function () {
-        chai.expect(1).to.equal(1);
+    it('should render h1 with todos', () => {
+        const wrapper = shallow(<App/>);
+        expect(wrapper.find('h1').length).to.equal(1);
     });
 });
