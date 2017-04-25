@@ -1,5 +1,5 @@
-.idea/*
 ReactSessions.iml
-node_modules/*
-.tmp/*
 bundle.js
+.idea/
+.tmp/
+node_modules/

@@ -19,7 +19,7 @@ describe('TodoList', function () {
 
     it('should render 1 todo with text Todo1 and completed false', () => {
         const firstTodo = wrapper.find('Todo').at(0);
-        expect(firstTodo.children()).to.have.text('Todo 1');
+        expect(firstTodo).to.have.prop("text",'Todo 1');
         expect(firstTodo).to.have.prop("completed", false);
     });
 });
