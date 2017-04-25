@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "chai": "^3.5.0",
+    "chai-enzyme": "^0.6.1",
     "enzyme": "^2.8.2",
     "mocha": "^3.3.0",
     "mocha-webpack": "^0.7.0",
@@ -13,7 +14,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "mocha-webpack --webpack-config  webpack.config.js test/**.test.js"
+    "test": "mocha-webpack --webpack-config  webpack.config.js test"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
