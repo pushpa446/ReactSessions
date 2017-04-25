@@ -1,1 +1,5 @@
-alert ("hello");
+var hello = () => {
+    alert('hello !!');
+}
+
+hello();
