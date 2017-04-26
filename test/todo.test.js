@@ -34,7 +34,7 @@ describe('Todo', () => {
         let wrapper = shallow(<Todo {...props}/>);
         const preventDefaultSpy = sinon.spy();
         wrapper.find('button').simulate('click', {preventDefault: preventDefaultSpy});
-        expect(preventDefaultSpy).to.have.called;
-        expect(props.onToggleCompleted).to.have.called;
+        expect(preventDefaultSpy).to.have.been.called;
+        expect(props.onToggleCompleted).to.have.been.called;
     });
 });
