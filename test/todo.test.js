@@ -12,7 +12,7 @@ describe('Todo', () => {
     });
     it('should render children', () => {
         const wrapper = shallow(<Todo {...props}/>);
-        expect(wrapper).to.have.descendants('div');
+        expect(wrapper).to.have.descendants('span');
         expect(wrapper).to.include.text("hello");
     });
 
